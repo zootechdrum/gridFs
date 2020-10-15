@@ -10,9 +10,10 @@
       crossorigin="anonymous"
     />
     <title>Mongo File Uploads</title>
+    <style></style>
   </head>
   <body>
-    <div class="container">
+    <div style="background-color: aqua" class="container">
       <div class="row">
         <div class="col-md-6 m-auto">
           <h1 class="text-center display-4 my-4">Mongo File Uploads</h1>
@@ -24,7 +25,7 @@
                 id="file"
                 class="custom-file-input"
               />
-              <label for="file" class="custom-file-label"> Choose File</label>
+              <label for="file" class="custom-file-label">Choose File</label>
             </div>
             <input
               type="submit"
@@ -32,6 +33,12 @@
               class="btn btn-primary btn-block"
             />
           </form>
+          <hr />
+          <% if(files){ %> 
+          <h1>there are files here</h1>
+          <% } else { %>
+          <p>No files to show</p>
+          <% } %>
         </div>
       </div>
     </div>
